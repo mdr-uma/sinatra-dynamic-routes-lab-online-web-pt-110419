@@ -1,4 +1,5 @@
 require_relative 'config/environment'
+require 'pry'
 
 class App < Sinatra::Base
   # Write your code here!
@@ -10,6 +11,7 @@ class App < Sinatra::Base
   get '/square/:number' do
     @num = params[:num].to_i ** 2
     @num.to_s
+    binding.pry
     # (Math.sqrt(@num)%1 == 0).to_s
   end
 end
