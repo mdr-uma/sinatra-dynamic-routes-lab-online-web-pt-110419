@@ -10,7 +10,7 @@ class App < Sinatra::Base
 
   get '/square/:number' do
     @num = params[:number].to_i #** 2
-    @num.to_s
+    # @num.to_s
     # binding.pry
      (Math.sqrt(@num)%1 == 0).to_s
   end
