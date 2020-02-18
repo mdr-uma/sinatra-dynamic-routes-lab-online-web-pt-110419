@@ -13,4 +13,8 @@ class App < Sinatra::Base
     @num.to_s
     # binding.pry
   end
+
+  get '/say/:number/:phrase' do
+    
+  end
 end
