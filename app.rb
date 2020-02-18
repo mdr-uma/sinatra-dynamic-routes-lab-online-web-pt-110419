@@ -12,6 +12,6 @@ class App < Sinatra::Base
     @num = params[:number].to_i ** 2
     @num.to_s
     # binding.pry
-    (Math.sqrt(@num)%1 == 0).to_s
+    # (Math.sqrt(@num)%1 == 0).to_s
   end
 end
